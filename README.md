@@ -6,6 +6,6 @@ i3 config dosyalarım
 
 *picom
 alacritty
-polybar
+polybar*
 
-Hack Nerd Font*
+*Hack Nerd Font*
