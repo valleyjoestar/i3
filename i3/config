@@ -15,6 +15,10 @@ set $mod Mod4
 # is used in the bar {} block below.
 font pango:Hack Nerd Font 9
 
+#gaps
+gaps inner 4
+gaps outer 4
+
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
@@ -112,6 +116,9 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+#screenshot
+bindsym Print exec gnome-screenshot -a
+
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
@@ -184,7 +191,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #5b5b5b #5b5b5b #ffffff #5b5b5b   #5b5b5b
+client.focused          #282a2e #282a2e #ffffff #282a2e   #282a2e
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
@@ -192,6 +199,6 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 client.background       #ffffff
 
-exec_always feh --bg-scale /home/soner/İndirilenler/cropped-1920-1080-1031260.png
+exec_always feh --bg-scale ~/İndirilenler/cropped-1920-1080-1031260.png
 exec_always ~/.config/polybar/launch.sh
 exec_always picom
