@@ -4,8 +4,10 @@ i3 config dosyalarım
 
 # İndirilmesi gerekenler
 
-*picom
+**picom
 alacritty
-polybar*
+polybar
+gnome-screenshot
+i3-gaps**
 
-*Hack Nerd Font*
+**Hack Nerd Font**
