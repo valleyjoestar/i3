@@ -16,8 +16,11 @@ set $mod Mod4
 font pango:Hack Nerd Font 9
 
 #gaps
-gaps inner 4
-gaps outer 4
+for_window [class="^.*"] border pixel 2
+gaps inner 3
+gaps outer 3
+smart_gaps off
+smart_borders on
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -199,6 +202,6 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 client.background       #ffffff
 
-exec_always feh --bg-scale ~/İndirilenler/cropped-1920-1080-1031260.png
+exec_always feh --bg-scale ~/İndirilenler/hatsune.png
 exec_always ~/.config/polybar/launch.sh
 exec_always picom
