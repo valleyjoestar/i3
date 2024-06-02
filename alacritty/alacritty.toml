@@ -19,7 +19,7 @@ white = "0x5c6370"
 yellow = "0xe5c07b"
 
 [colors.primary]
-background = "0x282c34"
+background = "#ffffff"
 foreground = "0xabb2bf"
 
 [colors.selection]
@@ -31,7 +31,7 @@ blinking = "Always"
 shape = "Block"
 
 [font]
-size = 15.0
+size = 11.5
 
 [font.glyph_offset]
 x = 0
@@ -45,5 +45,5 @@ style = "Regular"
 history = 15000
 
 [window]
-opacity = 0.9
+opacity = 0.85
 
